@@ -58,6 +58,7 @@ Dir.glob(review_path + "*").sort.each do |f|
     review_text = File.open(f).read
     review_text = clean_str(review_text)
     file.write review_text
+    file.write "\n\n"
     file.close
   end
 end
